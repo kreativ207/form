@@ -1,0 +1,1 @@
+<?phprequire_once('M_PDO.php');session_start();$db = M_PDO::Instance();$table = "form";$allRecords = $db->Select("SELECT * FROM {$table} ORDER BY `id` DESC");include_once('views/main.php');
